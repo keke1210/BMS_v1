@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/kamarier', 'PagesController@kamarier');
 Route::get('/menaxher', 'PagesController@menaxher');
 Route::get('/ekonomist', 'PagesController@ekonomist');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
